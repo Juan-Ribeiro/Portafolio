@@ -1,0 +1,39 @@
+.head {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    background: var(--background-plateado-metallic);
+}
+
+.head__titulo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.head__menu__enlace {
+    display: none;
+}
+
+.head__menu__enlace:last-child {
+    display: initial;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1024px){
+    .head__menu__links {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .head__menu__enlace {
+        display: initial;
+    }
+}

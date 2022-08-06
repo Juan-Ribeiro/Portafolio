@@ -1,0 +1,32 @@
+.sobre-mi {
+    background-color: var(--background-gris-davys);
+    text-align: justify;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.sobre-mi__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 1024px){
+    .sobre-mi__texto {
+        max-width: 750px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .sobre-mi {
+        align-items: center;
+    }
+
+    .sobre-mi__texto {
+        font-size: 1.25rem;
+    }
+}

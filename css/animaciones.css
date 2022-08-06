@@ -1,0 +1,42 @@
+.revelar {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.revelar.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.fadeIn {
+    animation: fadeInAnimation ease .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        transform: scale(0, .025);
+    }
+    50% {
+        transform: scale(1, .025);
+    }
+}
+
+.anim_subrayado {
+    display: inline-block;
+    padding-bottom: 2px;
+    background-image: linear-gradient(var(--background-gris-davys), var(--background-gris-davys));
+    background-position: 0 100%;
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.anim_subrayado:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+}

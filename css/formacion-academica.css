@@ -1,0 +1,58 @@
+.formacion-academica {
+    background-color: var(--background-gris-davys);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.formacion-academica__titulo {
+    text-align: center;
+}
+
+.formacion-academica__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.tarjeta-estudio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    width: 100%;
+}
+
+.tarjeta-estudio__contenedor-logo {
+    background: #FFFFFF;
+    height: 7.375rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.625rem;
+    align-self: stretch;
+}
+
+.tarjeta-estudio__logo {
+    background-color: #FFFFFF;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+@media screen and (min-width: 600px) {
+    .formacion-academica__lista {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .tarjeta-estudio__contenedor-logo {
+        height: 17.875rem;
+    }
+}
