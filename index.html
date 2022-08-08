@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Juan Elias Ribeiro | Portafolio</title>
+    <title>Juan Ribeiro | Portafolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -16,6 +16,7 @@
     <link href="css/hobbies.css" rel="stylesheet">
     <link href="css/formacion-academica.css" rel="stylesheet">
     <link href="css/experiencia-profesional.css" rel="stylesheet">
+    <link href="css/contacto.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link href="css/animaciones.css" rel="stylesheet">
 </head>
@@ -23,7 +24,7 @@
 <header class="head container-top fadeIn">
     <div class="head__titulo titulo">
         <img src="img/icono_header-estrellas.svg" alt="Logo" class="head__titulo__logo">
-        <h2 class="head__titulo__mi-nombre">Juan Elias Ribeiro</h2>
+        <h2 class="head__titulo__mi-nombre">Juan Ribeiro</h2>
     </div>
     <nav class="head__menu">
         <ul class="head__menu__links">
@@ -43,7 +44,7 @@
                 <a href="#seccion__proyectos" class="head__enlace texto anim_subrayado">Proyectos</a>
             </li>
             <li class="head__menu__enlace">
-                <a href="mailto:ribeiro.jer@hotmail.com" class="head__enlace anim_subrayado">ribeiro.jer@hotmail.com</a>
+                <a href="#seccion__contacto" class="head__enlace anim_subrayado">Contacto</a>
             </li>
         </ul>
     </nav>
@@ -52,7 +53,7 @@
     <section class="presentacion container-top fadeIn">
         <img class="presentacion__foto" src="img/foto-perfil-juan-ribeiro.png" alt="Foto de Juan Ribeiro">
         <article class="presentacion__datos-personales">
-            <h2 class="presentacion__datos-personales__titulo titulo">Hola, mi nombre es Juan Elias Ribeiro.</h2>
+            <h2 class="presentacion__datos-personales__titulo titulo">Hola, mi nombre es Juan Ribeiro.</h2>
             <p class="presentacion__datos-personales__texto texto">Soy estudiante en Ingeniería en Computación.
                 Actualmente estoy participando en el programa <strong>ONE - Oracle Next Education</strong> de la empresa
                 tecnológica <strong>Oracle</strong> en conjunto con <strong>Alura-Latam</strong>.</p>
@@ -77,13 +78,13 @@
         <h2 class="sobre-mi__titulo titulo">Sobre mi</h2>
         <div class="sobre-mi__texto texto">
             <p class="parrafo-sobre-mi">¡Saludos! Me llamo Juan, soy de Argentina.</p>
-            <p class="parrafo-sobre-mi">Actualmente estoy enfocado en formarme como FullStack Web Developer.</p>
             <p class="parrafo-sobre-mi">Poseo formación en manejo de tecnologías Front-End HTML5, CSS3 y JS
                 con proyección a otras tecnologías como React y Node.js.</p>
+            <p class="parrafo-sobre-mi">Actualmente me encuentro enfocado en formarme como FullStack Web Developer.</p>
             <p class="parrafo-sobre-mi">Mi sueño es poder entrar en el Mercado IT y poder desarrollar todo mi potencial
                 como profesional.</p>
-            <p class="parrafo-sobre-mi">Me considero una persona trabajadora, dedicada, autodidacta, de mente abierta,
-                con actitud receptible a las críticas y siempre dispuesto a aprender más y más.</p>
+            <p class="parrafo-sobre-mi">Me considero una persona trabajadora, dedicada, autodidacta, detallista,
+                resolutiva, con actitud receptible a las críticas y siempre dispuesto a aprender más y más.</p>
         </div>
     </section>
     <section id="seccion__skills" class="skills container-top revelar">
@@ -185,42 +186,54 @@
             </li>
         </ul>
     </section>
-</main>
-<footer class="footer revelar">
-    <section class="footer__contacto">
-        <img class="footer__contacto__ilustracion" src="img/imagen_contacto.png" alt="Contacto">
-        <article class="footer__contacto__contenedor">
-            <div class="footer__contacto__texto">
-                <h2 class="footer__contacto__titulo titulo">Contacto</h2>
-                <h3 class="footer__contacto__instruccion subtitulo"> Completa el siguiente
+    <section id="seccion__contacto" class="seccion__contacto revelar">
+        <img class="seccion__contacto__ilustracion" src="img/imagen_contacto.png" alt="Contacto">
+        <article class="seccion__contacto__contenedor">
+            <div class="seccion__contacto__texto">
+                <h2 class="seccion__contacto__titulo titulo">Contacto</h2>
+                <h3 class="seccion__contacto__instruccion subtitulo"> Completa el siguiente
                     formulario y me pondré en contacto contigo lo antes posible.</h3>
             </div>
-            <form action="" class="footer__contacto__formulario">
-                <div class="contacto__formulario__campo">
-                    <label for="formulario-contacto__nombre" class="texto">Nombre</label>
-                    <input type="text" id="formulario-contacto__nombre" class="contacto__formulario__input" required>
-                </div>
-                <div class="contacto__formulario__campo">
-                    <label for="formulario-contacto__email" class="texto">E-Mail</label>
-                    <input type="email" id="formulario-contacto__email" class="contacto__formulario__input" required>
-                </div>
-                <div class="contacto__formulario__campo">
-                    <label for="formulario-contacto__asunto" class="texto">Asunto</label>
-                    <input type="text" id="formulario-contacto__asunto" class="contacto__formulario__input" required>
-                </div>
-                <div class="contacto__formulario__campo">
-                    <label for="formulario-contacto__mensaje" class="texto">Mensaje</label>
-                    <textarea id="formulario-contacto__mensaje" class="contacto__formulario__input" required></textarea>
-                </div>
-                <button id="boton-enviar-formulario" class="contacto__formulario__boton boton">Enviar mensaje</button>
+            <form action="mailto:ribeiro.jer@hotmail.com?subject=Portafolio" class="seccion__contacto__formulario"
+                  method="post"
+                  enctype="text/plain">
+                <fieldset>
+                    <div class="formulario__campo">
+                        <label for="nombre" class="texto">Nombre</label>
+                        <input type="text" name="name" id="nombre" class="formulario__input" maxlength="50" required
+                               data-tipo="nombre">
+                        <span class="formulario__input__mensaje-error">Este campo no es válido</span>
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="email" class="texto">E-Mail</label>
+                        <input type="email" name="email" id="email" class="formulario__input" required
+                               data-tipo="email">
+                        <span class="formulario__input__mensaje-error">Este campo no es válido</span>
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="asunto" class="texto">Asunto</label>
+                        <input type="text" name="subject" id="asunto" class="formulario__input" maxlength="50" required
+                               data-tipo="asunto">
+                        <span class="formulario__input__mensaje-error">Este campo no es válido</span>
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="mensaje" class="texto">Mensaje (máx. 300 caracteres)</label>
+                        <textarea id="mensaje" name="message" class="formulario__input" maxlength="300" required
+                                  rows="4" data-tipo="mensaje"></textarea>
+                        <span class="formulario__input__mensaje-error">Este campo no es válido</span>
+                    </div>
+                    <button id="boton-enviar-formulario" class="formulario__boton">Enviar mensaje</button>
+                </fieldset>
             </form>
         </article>
-
     </section>
+</main>
+<footer class="footer">
     <section class="footer__creditos">
-        <h4 class="footer__creditos__texto subtitulo"> Desarrollado por Juan Elias Ribeiro <br>2022</h4>
+        <h4 class="footer__creditos__texto subtitulo"> Desarrollado por Juan Ribeiro <br>2022</h4>
     </section>
 </footer>
 <script src="js/animacion_revelar.js"></script>
+<script src="js/app.js" type="module"></script>
 </body>
 </html>

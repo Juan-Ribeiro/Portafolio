@@ -70,12 +70,13 @@ body {
 
 .boton:hover {
     transition: .5s;
-    transform: rotate(360deg);
+    transform: scale(1.1);
 }
 
 .boton:active {
-    transition: .5s;
-    transform: scale(1.2);
+    background-color: var(--background-gris-davys);
+    color: var(--background-blanco-cultured);
+    box-shadow: 0 5px var(--background-negro-rich);
 }
 
 @media screen and (min-width: 600px){

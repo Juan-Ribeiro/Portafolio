@@ -1,0 +1,108 @@
+.seccion__contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: .6rem;
+}
+
+.seccion__contacto__ilustracion {
+    display: none;
+}
+
+.seccion__contacto__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.seccion__contacto__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.seccion__contacto__instruccion {
+    font-weight: 500;
+}
+
+.seccion__contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.formulario__campo {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 1rem;
+    gap: .25rem;
+    align-self: stretch;
+    border-radius: 3px;
+}
+
+.formulario__input {
+    background-color: inherit;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1rem;
+    border: none;
+}
+
+.formulario__input:focus {
+    outline: none;
+
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+}
+
+.formulario__input--invalido .formulario__input__mensaje-error{
+    visibility: visible;
+    color: lightcoral;
+}
+
+.formulario__input__mensaje-error {
+    visibility: hidden;
+}
+
+.seccion__contacto__formulario:nth-child(4) {
+    height: 10rem;
+}
+
+.formulario__boton {
+    background: var(--background-negro-rich);
+    color: var(--background-blanco-cultured);
+    border-color: var(--background-blanco-cultured);
+    border-radius: 3px;
+
+    display: flex;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .seccion__contacto {
+        flex-direction: row;
+        gap: 1rem
+    }
+
+    .seccion__contacto__ilustracion {
+        display: initial;
+        max-width: 29rem;
+    }
+
+    .seccion__contacto__formulario {
+        flex-grow: 1;
+    }
+
+    .formulario__campo:nth-child(4) {
+        flex-grow: 1;
+    }
+}
